@@ -3,7 +3,7 @@ region = "ap-south-1"
 }
 
 resource "aws_instance" "one" {
-ami = "ami-0f8ca728008ff5af4"
+ami = ami-06b79cf2aee0d5c92""
 instance_type = "t2.micro"
 tags = {
 Name = "web-server"
@@ -17,7 +17,7 @@ region = "ap-south-1"
 }
 
 resource "aws_instance" "one" {
-ami = "ami-0f8ca728008ff5af4"
+ami = "ami-06b79cf2aee0d5c92"
 instance_type = var.instance_type
 tags = {
 Name = "web-server"
@@ -37,7 +37,7 @@ region = "ap-south-1"
 
 resource "aws_instance" "one" {
 count = 3
-ami = "ami-0f8ca728008ff5af4"
+ami = "ami-06b79cf2aee0d5c92"
 instance_type = var.instance_type
 tags = {
 Name = "web-server"
@@ -59,7 +59,7 @@ region = "ap-south-1"
 
 resource "aws_instance" "one" {
 count = var.instance_count
-ami = "ami-0f8ca728008ff5af4"
+ami = "ami-06b79cf2aee0d5c92"
 instance_type = var.instance_type
 tags = {
 Name = "web-server"
@@ -90,7 +90,7 @@ region = "ap-south-1"
 
 resource "aws_instance" "one" {
 count = var.instance_count
-ami = "ami-0f8ca728008ff5af4"
+ami = ami-06b79cf2aee0d5c92""
 instance_type = var.instance_type
 tags = {
 Name = "web-server"
@@ -121,7 +121,7 @@ region = "ap-south-1"
 }
 
 resource "aws_s3_bucket" "one" {
-  bucket = "raham009988"
+  bucket = "devops2233"
 }
 
 resource "aws_ebs_volume" "example" {
@@ -194,15 +194,14 @@ variable "instance_name" {
 
 swiggy.tfvars
 
-ami_id = "ami-0557a15b87f6559cf"
+ami_id = "ami-06b79cf2aee0d5c92"
 
 instance_type = "t2.micro"
 
 instance_name = "swiggy-dev"
 
 zomato.tfvars
-
-ami_id = "ami-0c9978668f8d55984"
+ami_id = "ami-06b79cf2aee0d5c92"
 
 instance_type = "t2.medium"
 
@@ -233,7 +232,7 @@ region = "us-east-1"
 }
 
 resource "aws_instance" "xyz" {
-ami = "ami-005f9685cb30f234b"
+ami = "ami-06b79cf2aee0d5c92"
 instance_type = "t2.medium"
 tags = var.instance_tags
 }
@@ -276,7 +275,7 @@ Name = "${local.staging_env}-subnet"
 }
 
 resource "aws_instance" "three" {
-  ami           = "ami-074dc0a6f6c764218"
+  ami           = "ami-06b79cf2aee0d5c92"
   instance_type = "t2.medium"
   subnet_id = aws_subnet.two.id
   tags = {
@@ -297,7 +296,7 @@ region = "us-east-1"
 }
 
 resource "aws_instance" "three" {
-ami = "ami-05afd67c4a44cc983"
+ami = "ami-06b79cf2aee0d5c92"
 instance_type = "t2.nano"
 tags = {
 Name = "mumbai"
@@ -306,7 +305,7 @@ Name = "mumbai"
 
 resource "aws_instance" "two" {
 provider = aws.east
-ami = "ami-02f3f602d23f1659d"
+ami = "ami-06b79cf2aee0d5c92"
 instance_type = "t2.nano"
 tags = {
 Name = "nvirginia"
@@ -346,7 +345,7 @@ description = "Ingree rules for port 80"
 }
 
 resource "aws_instance" "ec2_example" {
-    ami = "ami-0c02fb55956c7d316"
+    ami = "ami-06b79cf2aee0d5c92"
     instance_type = "t2.micro"
     vpc_security_group_ids = [aws_security_group.main.id]
     tags = {
