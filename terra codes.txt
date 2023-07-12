@@ -1,5 +1,5 @@
 provider "aws" {
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
@@ -13,7 +13,7 @@ Name = "web-server"
 =========================================================================================================================================
 
 provider "aws" {
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
@@ -32,7 +32,7 @@ default = "t2.medium"
 
 =========================================================================================================================================
 provider "aws" {
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
@@ -54,7 +54,7 @@ default = "t2.medium"
 =========================================================================================================================================
 
 provider "aws" {
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
@@ -85,7 +85,7 @@ default = 2
 vim main.tf 
 
 provider "aws" {
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
@@ -117,7 +117,7 @@ default = 2
 =========================================================================================================================================
 
 provider "aws" {
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_s3_bucket" "one" {
@@ -125,7 +125,7 @@ resource "aws_s3_bucket" "one" {
 }
 
 resource "aws_ebs_volume" "example" {
-  availability_zone = "ap-south-1a"
+  availability_zone = "ap-southeast-1a"
   size              = 40
 
   tags = {
@@ -148,7 +148,7 @@ resource "aws_efs_file_system" "foo" {
 DAY -02:
 
 provider "aws" {
-region = "us-east-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
@@ -167,7 +167,7 @@ variable "ami_id" {
 main.tf
 
 provider "aws" {
-region = "us-east-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
@@ -211,7 +211,7 @@ instance_name = "zomato-dev"
 =========================================================================================================================================
 
 provider "aws" {
-region = "us-east-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_iam_user" "one" {
@@ -228,7 +228,7 @@ default = ["user1", "user2", "user3", "user4"]
 =========================================================================================================================================
 
 provider "aws" {
-region = "us-east-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_instance" "xyz" {
@@ -251,7 +251,7 @@ team = "devops"
 DAY :03
 
 provider "aws" {
-  region = "ap-south-1"
+  region = "ap-southeast-1"
 }
 
 locals {
@@ -287,7 +287,7 @@ resource "aws_instance" "three" {
 =========================================================================================================================================
 
 provider "aws" {
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
 provider "aws" {
@@ -315,7 +315,7 @@ Name = "nvirginia"
 =========================================================================================================================================
 
 provider "aws" {
-region = "ap-south-1"
+region = "ap-southeast-1"
 }
 
 resource "aws_iam_user" "one" {
