@@ -3,7 +3,7 @@ region = "ap-south-1"
 }
 
 resource "aws_instance" "one" {
-ami = ami-06b79cf2aee0d5c92""
+ami = "ami-06b79cf2aee0d5c92"
 instance_type = "t2.micro"
 tags = {
 Name = "web-server"
